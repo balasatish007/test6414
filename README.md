@@ -1,1 +1,3 @@
-nohup perl /opt/liferaysharepv/monthly_reports/run_report_blueweb2.pl > /opt/liferaysharepv/monthly_reports/run_report.log 2>&1 &
+</#if>
+    <a href="https://bluewebportal.bcbs.com/programs/fep/fep-shared-calendar-1col">View Full Calendar</a>
+</div>
