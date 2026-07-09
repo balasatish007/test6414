@@ -340,7 +340,10 @@ Yes
 	      	No
 		</c:otherwise>
 	</c:choose>
-<c:if test="${not empty brandrequest.groupAccountType.grpAcctTypDesc}">
+<%-- Group Account Type: show only for legacy records (created before the 17-question
+     enhancement). New records are identified by CB_Q1_LEGAL_NAME_CNFRMD being populated;
+     for those, Group Account Type is neither captured nor displayed. --%>
+<c:if test="${empty brandrequest.cbQ1LegalNameCnfrmd and not empty brandrequest.groupAccountType.grpAcctTypDesc}">
 <h4>
 	Choose Group Account Type
 </h4>
